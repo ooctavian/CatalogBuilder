@@ -5,6 +5,9 @@ import { GlobalExceptionFilter } from './filters/global-exception.filter';
 import { JsonLoggerService } from 'json-logger-service';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
+// Temporary solution
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const config = new DocumentBuilder()

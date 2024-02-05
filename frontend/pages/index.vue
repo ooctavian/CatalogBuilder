@@ -43,11 +43,7 @@
         <n-button
           type="info"
           size="large"
-          @click.prevent="
-            navigateTo('/0c60121d-0e36-4b93-b5c6-35a4f5fac613', {
-              external: true,
-            })
-          "
+          @click.prevent="navigateTo('/0c60121d-0e36-4b93-b5c6-35a4f5fac613')"
           style="font-size: 1.3rem; padding: 1.8rem"
         >
           Live Demo

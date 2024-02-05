@@ -8,11 +8,7 @@ import configuration from '../configuration';
 const config = configuration();
 export const DatabaseModule = TypeOrmModule.forRoot({
   type: 'postgres',
-  host: config.host,
-  port: config.port,
-  username: config.username,
-  password: config.password,
-  database: config.database,
+  url: config.database_url,
   logging: true,
   // database: './database.db',
   entities: [User, Token, Item, Store],
